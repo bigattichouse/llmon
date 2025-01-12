@@ -16,6 +16,8 @@ Here's an example from the `apache/httpd` project in the `mod_proxy.c` file:
     "resolution":"Review DNS settings and resolve any issues related to host resolution"
   }
 ```
+TODO: Additionally, I think I should include the user's current server config as part of the considerations, so that the LLM can amke good suggestions about configuration changes.
+
 # Pipeline
 
 1. Read a batch of `journalctl` or `systemd` logs into a log snapshot
