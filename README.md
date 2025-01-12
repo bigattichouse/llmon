@@ -5,7 +5,7 @@ LLM-based syslog and journalctl monitoring and analysis.
 LLMon is a tool that can diagnose syslog and journalctl entries with a mix of inference and RAG activity.  
 
 # Retrieval Augmented Generation (RAG)
-The RAG entries come from the dataset (https://github.com/bigattichouse/llmon_dataset)[https://github.com/bigattichouse/llmon_dataset] created by analyzing open source projects and locating possible error messages that could be surfaced in the code. The LLM analyzes each potential message during creation of the dataset to determine the reason for the message, as well as possible resolutions. This data is stored in JSON files in the llmon_dataset folder, so it can be easily updated with git pulls. It can also be limited by creating a custom branch and only pulling the projects you need.
+The RAG entries come from the dataset (https://github.com/bigattichouse/llmon_dataset) created by analyzing open source projects and locating possible error messages that could be surfaced in the code. The LLM analyzes each potential message during creation of the dataset to determine the reason for the message, as well as possible resolutions. This data is stored in JSON files in the llmon_dataset folder, so it can be easily updated with git pulls. It can also be limited by creating a custom branch and only pulling the projects you need.
 
 Here's an example from the `apache/httpd` project in the `mod_proxy.c` file:
 ```json
